@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+        <title>24 VR example</title>
+        <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+        <a-assets>
+        <video id="video" src="vid/dolphin.mp4"
+               autoplay loop crossorigin></video>
+            <!--
+             <a-asset-item id="my-obj" src="assets/Rory/Rory.obj"></a-asset-item>
+             <a-asset-item id="my-mtl" src="assets/Rory/Rory.mtl"></a-asset-item>
+             <a-asset-item id="Rory" src="assets/Rory/Rory.dae"></a-asset-item>
+             -->
+            
+            <!--<img id= "madeby" src="img/madeby2.png"> -->
+            
+        </a-assets>
+        
+      <a-videosphere src="#video" rotation="0 180 0"></a-videosphere>
+        <!-- <a-sky color = "#bbb"> </a-sky> -->
+         <a-camera position="0 2 1.5" wasd-controls= "acceleration: 500 ; enabled: true">
+             
+         </a-camera>
+         </a-scene>
+    </body>
+</html>

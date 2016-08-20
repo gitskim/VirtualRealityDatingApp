@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <title>24 VR example</title>
+    <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+  </head>
+  <body>
+     <!-- <a-scene>-->
+<!--main background image-->
+   <a-scene fog = "type: exponential; color : #fff">
+
+<!--
+    <a-scene vr-mode-ui="enabled: true">
+                     -->
+   <a-assets>
+       
+       
+       
+      <img id= "kevinprofile" src="img/KevinProfile.png">
+
+       <img id="ground" src="img/confectionary.png">
+       <img id="cracks" src="img/cracks.jpg">
+       <img id="icovy" src="img/Icovy.png">
+
+       
+       <a-asset-item id="my-obj" src="assets/Rory/Rory.obj"></a-asset-item>
+       <a-asset-item id="my-mtl" src="assets/Rory/Rory.mtl"></a-asset-item>
+       <!--
+       <a-asset-item id="my-obj-girl" src="assets/Amy_Pond_A/Amy_Pond_A.obj"></a-asset-item>
+       <a-asset-item id="my-mtl-girl" src="assets/Amy_Pond_A/Amy_Pond_A.mtl"></a-asset-item>
+       -->
+       <a-asset-item id="my-obj-parker" src="assets/Peter_Parker/Peter_Parker.obj"></a-asset-item>
+       <a-asset-item id="my-mtl-parker" src="assets/Peter_Parker/Peter_Parker.mtl"></a-asset-item>
+       <!--
+       <a-asset-item id="my-obj-man" src="assets/Man/Man.obj"></a-asset-item>
+       <a-asset-item id="my-mtl-man" src="assets/Man/Man.mtl"></a-asset-item>
+       
+       <a-asset-item id="my-obj-girl2" src="assets/Girl/girl.obj"></a-asset-item>
+       <a-asset-item id="my-mtl-girl2" src="assets/Girl/girl.mtl"></a-asset-item>
+       -->
+       
+       <a-assets-item id="kevin" src="assets/kevin/man.dae"></a-asset-item> 
+<!--      <a-asset-item id="Rory" src="assets/Rory/Rory.dae"></a-asset-item> -->
+    
+    <!--<img id= "madeby" src="img/madeby2.png"> -->
+
+      </a-assets>
+ <a-collada-model src="#kevin" position = "5 -2.5 -4" rotation = "0 -30 0"  scale = "3.5 3.5 3.5">
+    <!--
+       <a-animation begin="click" attribute = "position" from = "5 -2.5 -4" to = "-2 -2.5 -2" > 
+             </a-animation>-->
+                <a-image src="#kevinprofile" position = "3 1.5 0" rotation = "0 -45 0"  width=8em height = 4em>
+      </a-image>
+
+ </a-collada-model>
+
+<a-entity obj-model="obj: #my-obj; mtl: #my-mtl" position = "-3.2 -2.5 0" rotation = "0 90 0"  scale = "1.5 1.5 1.5">
+  
+             <a-animation begin="click" attribute = "rotation" from = "0 90 0" to = "0 450 0">
+
+             </a-animation>
+</a-entity>
+<a-entity geometry="primitive: plane; height: 100; width: 100"
+    material="repeat: 10 10; src: #icovy; width: 100"
+    rotation="-90 0 0" position="0 -2.5 -6"></a-entity>
+
+
+<a-sky src = "img/pana4.jpg"> </a-sky>
+      <a-camera position="0 2 1.5" wasd-controls= "acceleration: 200 ; enabled: true">
+          
+        <!--  <a-entity obj-model="obj: #my-obj-girl; mtl: #my-mtl-girl" position = "8 -2.5 4" rotation = "0 180 0"  scale = "1.5 1.5 1.5"></a-entity>
+    -->
+        <a-entity cursor="fuse: true; maxDistance: 30; timeout: 500"
+            scale = "0.01 0.01 0.01"
+            position="0 0 -1"
+            geometry="primitive: ring"
+            material="color: white; shader: flat">
+  
+        </a-entity>
+
+      </a-camera>
+    </a-scene>
+  </body>
+</html>

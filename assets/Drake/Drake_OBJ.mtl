@@ -1,0 +1,36 @@
+newmtl blinn1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd diffuseDrake_2k.jpg
+bump Normal_map_Drake_2k.jpg -bm 1
+Ni 1.00
+Ks 0.06 0.06 0.06
+newmtl blinn2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd diffuseDrake_2k.jpg
+bump Normal_map_Drake_2k.jpg -bm 1
+Ni 1.00
+Ks 0.02 0.02 0.02
+newmtl blinn3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd diffuseDrake_2k.jpg
+bump Normal_map_Drake_2k.jpg -bm 1
+Ni 1.00
+Ks 0.08 0.08 0.08
+newmtl blinn4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd diffuseDrake_2k.jpg
+bump Normal_map_Drake_2k.jpg -bm 1
+Ni 1.00
+Ks 0.61 0.61 0.61
