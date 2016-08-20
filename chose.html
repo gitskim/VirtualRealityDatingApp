@@ -66,6 +66,7 @@
                               -->
 
                               </a-entity>
+                              
                               <a-entity geometry="primitive: plane; height: 100; width: 100"
                                   material="repeat: 10 10; src: #icovy; width: 100"
                                   rotation="-90 0 0" position="0 -2.5 -6"></a-entity>
@@ -86,23 +87,6 @@
                                   </a-scene>
 
 
-  <a-scene id = "scene2">
-    <a-camera position="2 0 3">
-      <a-entity cursor="fuse: true; maxDistance: 30; timeout: 1000">
-      </a-entity>
-    </a-camera>
-
-    <a-entity id="scene1">
-      <a-cube color="red" onclick="nextScene()"> </a-cube>
-    </a-entity>
-
-    <a-entity id="scene2" visible="false">
-      <a-cube color="green" position="0 2 -5"> </a-cube>
-      <a-cube color="yellow" position="5 0 -5"> </a-cube>
-      <a-cube color="blue" position="0 0 -1"> </a-cube>
-    </a-entity>
-
-  </a-scene>
 
   <script type="text/javascript">
 
