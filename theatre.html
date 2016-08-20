@@ -13,12 +13,8 @@
                <img id="ground" src="img/ground.jpg">
                <img id="cracks" src="img/cracks.jpg">
                <img id="icovy" src="img/Icovy.png">
-
+               <img id="brick" src="img/brick.jpg">
 </a-assets>
-
-
-
-
                               <a-entity geometry="primitive: plane; height: 100; width: 100 opacity: 0.5"
                                   material="repeat: 10 10; src: #ground; width: 100"
                                   opacity = "0.1"
@@ -27,8 +23,10 @@
 
 
                           <a-sphere position="0 1.25 -1" radius="3" color="#EF2D5E" ></a-sphere>
-                          <a-box position="0 15 -30" width="50" height="30" depth=".5" color="#999"></a-box>
-                          <a-box position="0 15 -30" width="45" height="25" depth=".5" color="#fff"></a-box>
+                          <a-box position="0 15 -30" width="50" height="30" depth=".5" color="#999" 
+                                  material="repeat: 10 10; src: #brick"></a-box>
+                          <a-box position="0 14 -30" width="45" height="22" depth=".5" color="#fff"
+></a-box>
                           <!--<a-cylinder position="0 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
                      -->         <a-sky src = "img/night.jpg"> </a-sky>
                                     <a-camera position="0 2 1.5" wasd-controls= "acceleration: 200 ; enabled: true">
