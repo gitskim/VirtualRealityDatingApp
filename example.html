@@ -11,7 +11,8 @@
   function nextScene1() { //Random guys here
     document.getElementById('scene1').setAttribute('visible', 'true')
     document.getElementById('scene2').setAttribute('visible', 'false')
-    document.getElementById('scene3').setAttribute('visible', 'false')
+    document.getElementById('scene3').setAttribute('visible', 'true')
+    document.getElementById('scene3').setAttribute('enabled', 'true')
     document.getElementById('scene4').setAttribute('visible', 'false')
   }
 
@@ -19,6 +20,7 @@
     document.getElementById('scene1').setAttribute('visible', 'false')
     document.getElementById('scene2').setAttribute('visible', 'true')
     document.getElementById('scene3').setAttribute('visible', 'false')
+    document.getElementById('scene3').setAttribute('enabled', 'false')
     document.getElementById('scene4').setAttribute('visible', 'false')
   }
 
@@ -26,6 +28,7 @@
     document.getElementById('scene1').setAttribute('visible', 'false')
     document.getElementById('scene2').setAttribute('visible', 'false')
     document.getElementById('scene3').setAttribute('visible', 'true')
+    document.getElementById('scene3').setAttribute('enabled', 'true')
     document.getElementById('scene4').setAttribute('visible', 'false')
   }
 
@@ -33,13 +36,29 @@
     document.getElementById('scene1').setAttribute('visible', 'false')
     document.getElementById('scene2').setAttribute('visible', 'false')
     document.getElementById('scene3').setAttribute('visible', 'false')
+    document.getElementById('scene3').setAttribute('enabled', 'false')
     document.getElementById('scene4').setAttribute('visible', 'true')
   }
 
   function transition() {
-    document.getElementById('scene1').setAttribute('visible', 'true')
-    document.getElementById('scene2').setAttribute('visible', 'false')
-    document.getElementById('scene3').setAttribute('visible', 'false')
+/*
+  console.log("WE didnt see anythhing");
+  
+  document.write('<a-obj-model src="#my-obj-heart" position="0 -0.7 -5" scale="0.01 0.01 0.01" material="color: red" rotation= "0 45 0" > <a-animation   attribute="position" from="0 -0.7 -5" to="0 1000 -5" dur="100000" ></a-animation></a-obj-model>');
+  /*
+document.write('
+                    <a-obj-model
+                                src="#my-obj-heart"
+                                position="2 -2.4 -10"
+                                scale="0.01 0.01 0.01"
+                                rotation= "0 30 0"
+                                material="color: red"
+                                >
+                                 <a-animation   attribute="position" from="2 -2.4 -10" to="2 1000 -10" dur="100000" ></a-animation>
+                    </a-obj-model>');
+
+                    */
+                             
   }
   </script>
   <a-scene fog = "type: exponential; color : #fff">
@@ -79,7 +98,7 @@
 
 
 
-                                   <img id= "bground" src= "img/pana4jpg">
+                                   <img id= "bground" src= "img/pana4.jpg">
                                    <img id= "example" src= "img/Bundeena-pier-360-panorama-NSW-Australia.jpg">
 
                                     <img id="guy1" src="img/guypic1.png">
@@ -95,7 +114,7 @@
 
 
                                     
-                                    <a-asset-item id="my-obj-heart" src="assets/Heart.obj"></a-asset-item>
+                                     <a-asset-item id="my-obj-heart" src="assets/Heart.obj"></a-asset-item>
                                      
                                      <a-asset-item id="my-obj" src="assets/Rory/Rory.obj"></a-asset-item>
                                      <a-asset-item id="my-mtl" src="assets/Rory/Rory.mtl"></a-asset-item>
@@ -136,7 +155,8 @@
 
 
 
-                               <a-collada-model id = "kev" src="#kevin" position = "5 -2.5 -4" rotation = "0 -30 0"  scale = "3.5 3.5 3.5" onclick="nextScene2()">
+                              <a-collada-model id = "kev" src="#kevin" position = "5 -2.5 -4" rotation = "0 -30 0"  scale = "3.5 3.5 3.5" onclick="nextScene2()">
+<!--                               <a-collada-model id = "kev" src="#kevin" position = "5 -2.5 -4" rotation = "0 -30 0"  scale = "3.5 3.5 3.5" onclick="transition()"> -->
                                </a-collada-model>
                                 </a-image>
     
@@ -173,8 +193,6 @@
 
                                       </a-collada-model>
 
-
-                                </a-image>
                               <a-entity geometry="primitive: plane; height: 100; width: 100"
                                   material="repeat: 10 10; src: #icovy; width: 100"
                                   rotation="-90 0 0" position="0 -2.5 -6"></a-entity>
@@ -185,7 +203,7 @@
     </a-entity>
 
 
-  <a-entity id = "scene3" visible = "false">
+  <a-entity id = "scene3" visible = "false" enabled ="false">
 
                         <a-collada-model src="#kevin" position = "5 -2.5 -4" rotation = "0 -30 0"  scale = "3.5 3.5 3.5">           
                               
@@ -196,14 +214,18 @@
                                 <a-animation begin="click" attribute = "scale" from = "1 1 1" to = "1.5 1.5 1.5" >
                                  </a-animation>
                                                      
-
+                                 </a-image>
                          </a-collada-model>
                           <a-entity geometry="primitive: plane; height: 100; width: 100"
                                                           material="repeat: 10 10; src: #icovy; width: 100"
-                                                          rotation="-90 0 0" position="0 -2.5 -6"></a-entity>
+                                                          rotation="-90 0 0" position="0 -2.5 -6">
+                          </a-entity>
 
 
                              
+
+
+
                     <!-- left-->
 
                     <a-obj-model
