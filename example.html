@@ -99,7 +99,7 @@
 -->
       <a-cube color="red" scale="3 3 3" onclick="nextScene()"> </a-cube>
 
-                              <a-sky src = "img/pana4.jpg"> </a-sky>
+                              <a-sky src = "img/pana4.jpg"  fog = "type: exponential; color : #fff" id ="scene1"> </a-sky>
                                <a-collada-model id = "kev" src="#kevin" position = "5 -2.5 -4" rotation = "0 -30 0"  scale = "3.5 3.5 3.5">
                                  
                                             <a-animation begin="hover" attribute = "rotation" from = "0 90 0" to = "0 450 0">
@@ -183,8 +183,7 @@
                                   material="repeat: 10 10; src: #ground; width: 100"
                                   rotation="-90 0 0" position="0 -2.5 -6"></a-entity>
 
-
-    <a-sky src="img/night.jpg"></a-sky>
+                              <a-sky src = "img/pana4.jpg"  fog = "type: exponential; color : #fff" id ="scene1"> </a-sky>
     </a-entity>
 
 <!--
