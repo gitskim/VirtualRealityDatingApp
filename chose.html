@@ -23,6 +23,8 @@
 	<img id= "chat" src="img/StartChatting.png">
 	<img id= "pass" src="img/Pass.png">	
 
+    <img id= "back" src="img/back.png"> 
+
                                      <img id="ground" src="img/confectionary.png">
                                      <img id="cracks" src="img/cracks.jpg">
                                      <img id="icovy" src="img/Icovy.png">
@@ -89,6 +91,11 @@
 
                               </a-entity>
                               
+                               <a-image src= "#back" position= "0 10 0" scale= "0.3 0.3 0.3"  rotation = "270 0 0" width = 8em height = 5em >
+          <a-animation repeat= "indefinite" attribute ="rotation" from = "270 0 0 " to = "270 360 0" dur="50000">
+          </a-animation>
+
+      </a-image>
                               <a-entity geometry="primitive: plane; height: 100; width: 100"
                                   material="repeat: 10 10; src: #icovy; width: 100"
                                   rotation="-90 0 0" position="0 -2.5 -6"></a-entity>
