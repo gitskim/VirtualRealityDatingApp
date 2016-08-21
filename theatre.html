@@ -1,8 +1,9 @@
 <!doctype html>
 <html>
 <head>
-  <title>multiplse pseudo scenes</title>
+  <title>Movie Theatre</title>
     <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+    <script src="js/play-video.js"></script>
 </head>
 <body>
 
@@ -14,6 +15,14 @@
                <img id="cracks" src="img/cracks.jpg">
                <img id="icovy" src="img/Icovy.png">
                <img id="brick" src="img/brick.jpg">
+
+
+      <video id="nyc" preload="none" muted src="vid/NYclip1.mp4"></video>
+
+                <!--<video id="ny" autoplay loop="true" src="vid/NYclip1.mp4"> -->
+
+
+                <video id="ny" autoplay loop="true" src="https://www.youtube.com/watch?v=ogP3bxcpQP4"> 
 </a-assets>
                               <a-entity geometry="primitive: plane; height: 100; width: 100 opacity: 0.5"
                                   material="repeat: 10 10; src: #ground; width: 100"
@@ -27,6 +36,11 @@
                                   material="repeat: 10 10; src: #brick"></a-box>
                           <a-box position="0 14 -30" width="45" height="22" depth=".5" color="#fff"
 ></a-box>
+
+  <a-video src="#nyc" width="45" height="22" depth=".5" position="0 14 -30"></a-video>
+
+  <!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->
+  <!--<a-video src="airbending.mp4"></a-video>-->
                           <!--<a-cylinder position="0 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
                      -->         <a-sky src = "img/night.jpg"> </a-sky>
                                     <a-camera position="0 2 1.5" wasd-controls= "acceleration: 200 ; enabled: true">
