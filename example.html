@@ -8,16 +8,16 @@
 
   <script type="text/javascript">
 
-  function nextScene1() {
-    document.getElementById('scene1').setAttribute('visible', 'false')
-    document.getElementById('scene2').setAttribute('visible', 'true')
+  function nextScene1() { //Random guys here
+    document.getElementById('scene1').setAttribute('visible', 'true')
+    document.getElementById('scene2').setAttribute('visible', 'false')
     document.getElementById('scene3').setAttribute('visible', 'false')
     document.getElementById('scene4').setAttribute('visible', 'false')
   }
 
-  function nextScene2() {
-    document.getElementById('scene1').setAttribute('visible', 'true')
-    document.getElementById('scene2').setAttribute('visible', 'false')
+  function nextScene2() { //profile
+    document.getElementById('scene1').setAttribute('visible', 'false')
+    document.getElementById('scene2').setAttribute('visible', 'true')
     document.getElementById('scene3').setAttribute('visible', 'false')
     document.getElementById('scene4').setAttribute('visible', 'false')
   }
@@ -123,7 +123,7 @@
     <!--
       <a-sphere position="5 1.25 -1" radius="0.25" color="#EF2D5E" width="1" height="1" depth="1" onclick="nextScene1()"></a-sphere>
 -->
-      <a-cube color="red" scale="3 3 3" onclick="nextScene1()"> </a-cube>
+      <a-cube color="red" scale="3 3 3" onclick="nextScene2()"> </a-cube>
 <!--
                                <a-collada-model id = "kev" src="#kevin" position = "5 -2.5 -4" rotation = "0 -30 0"  scale = "3.5 3.5 3.5">
                                  
@@ -201,7 +201,11 @@
                               <a-sky src = "img/pana4.jpg"> </a-sky>
     </a-entity>
 
-    <a-entity id="scene2" visible="true">
+
+
+
+
+  <a-entity id="scene2" visible="true">
 
               <a-image src="#guy1" position = "3 1 -5.5" rotation = "0 -20 0"  width=1.3em height = 4em>
               </a-image>
@@ -217,7 +221,7 @@
 
 
 
-                               <a-collada-model id = "kev" src="#kevin" position = "5 -2.5 -4" rotation = "0 -30 0"  scale = "3.5 3.5 3.5" onclick="nextScene2()">
+                               <a-collada-model id = "kev" src="#kevin" position = "5 -2.5 -4" rotation = "0 -30 0"  scale = "3.5 3.5 3.5" onclick="nextScene1()">
                                </a-collada-model>
                                 </a-image>
     
@@ -230,7 +234,7 @@
 
     <a-entity id="scene3" visible="false">
 <a-sky src = "#example"> </a-sky>
- <a-image src= "img/back.png" position= "0 -2.4 0" scale= "0.3 0.3 0.3" rotation = "270 0 0" width = 5em height = 5em onclick="nextScene2()">
+ <a-image src= "img/back.png" position= "0 -2.4 0" scale= "0.3 0.3 0.3" rotation = "270 0 0" width = 5em height = 5em onclick="nextScene1()">
  <a-animation repeat="indefinite" attribute="rotation" from="270 0 0" to="270 359 0" dur="20000">
       
       </a-animation>
