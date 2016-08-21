@@ -22,14 +22,14 @@
     document.getElementById('scene4').setAttribute('visible', 'false')
   }
 
-  function nextScene3() { //VR scene
+  function nextScene3() { //Kevin acceptance
     document.getElementById('scene1').setAttribute('visible', 'false')
     document.getElementById('scene2').setAttribute('visible', 'false')
     document.getElementById('scene3').setAttribute('visible', 'true')
     document.getElementById('scene4').setAttribute('visible', 'false')
   }
 
-  function nextScene4() { //Kevin acceptance
+  function nextScene4() {  //VR scene
     document.getElementById('scene1').setAttribute('visible', 'false')
     document.getElementById('scene2').setAttribute('visible', 'false')
     document.getElementById('scene3').setAttribute('visible', 'false')
@@ -119,94 +119,7 @@
 
 </a-assets>
 
-
-    <a-entity id="scene1" visible = "false">
-    <!--
-      <a-sphere position="5 1.25 -1" radius="0.25" color="#EF2D5E" width="1" height="1" depth="1" onclick="nextScene1()"></a-sphere>
--->
-      <a-cube color="red" scale="3 3 3" onclick="nextScene2()"> </a-cube>
-<!--
-                               <a-collada-model id = "kev" src="#kevin" position = "5 -2.5 -4" rotation = "0 -30 0"  scale = "3.5 3.5 3.5">
-                                 
-                                            <a-animation begin="hover" attribute = "rotation" from = "0 90 0" to = "0 450 0">
-
-                                           </a-animation>
-                                           
-                                              <a-image src="#kevinprofile" position = "3 1.5 0.5" rotation = "0 -45 0"  width=8em height = 4em>
-
-                                            </a-image>
-
-                                          <a-image src="#invitevrdate" position = "1.2 0.2 -0.4" rotation = "0 -45 0" width=1em height=0.2em >
-                                            <a-animation begin="click" attribute = "scale" from = "1 1 1" to = "1.5 1.5 1.5" >
-                                                  </a-animation>
-                                          
-                                          </a-image>
-                                              
-                                              <a-image src="#chat" position = "1.8 0.2 0.5" rotation = "0 -45 0" width = 1em height=0.2em>
-                                                <a-animation begin="click" attribute = "scale" from = "1 1 1" to = "1.5 1.5 1.5" >
-                                                  </a-animation>
-                                              
-                                              </a-image>        
-                                           
-                                            <a-image src="#pass" position = "2.6 0.2 1.3" rotation = "0 -45 0" width = 1em height= 0.2em onclick="nextScene1()" scale= "1 1 1">
-                                              <a-animation begin="click" attribute = "scale" from = "1 1 1" to = "1.5 1.5 1.5" >
-                                                  </a-animation>
-
-                                            </a-image>
-
-
-
-
-                               </a-collada-model> -->
-                                <a-collada-model src="#kevin" position = "5 -2.5 -4" rotation = "0 -30 0"  scale = "3.5 3.5 3.5">
-   <!--
-      <a-animation begin="click" attribute = "position" from = "5 -2.5 -4" to = "-2 -2.5 -2" >
-            </a-animation>-->
-             <a-animation begin="hover" attribute = "rotation" from = "0 90 0" to = "0 450 0">
-
-            </a-animation>
-           
-               <a-image src="#kevinprofile" position = "3 1.5 0.5" rotation = "0 -45 0"  width=8em height = 4em>
-           </a-image>
-
-    <a-image src="#invitevrdate" position = "1.2 0.2 -0.4" rotation = "0 -45 0" width=0.9em height=0.2em onclick="nextScene4()"  scale= "1 1 1">
-   <a-animation begin="click" attribute = "scale" from = "1 1 1" to = "1.5 1.5 1.5" >
-               </a-animation>
-   </a-image>
-           
-           <a-image src="#chat" position = "2.1 0.2 0.5" rotation = "0 -45 0" width = 0.9em height=0.2em onclick="nextScene2()" scale= "1 1 1">
-            <a-animation begin="click" attribute = "scale" from = "1 1 1" to = "1.5 1.5 1.5" >
-               </a-animation>
-           </a-image>      
-     
-       <a-image src="#pass" position = "3 0.2 1.4" rotation = "0 -45 0" width = 0.9em height= 0.2em onclick="nextScene()" scale= "1 1 1">
-        <a-animation begin="click" attribute = "scale" from = "1 1 1" to = "1.5 1.5 1.5" >
-               </a-animation>
-       </a-image>
-
-</a-collada-model>
-
-
-                              <!-- <a-image src= "#back" position= "0 5 -4" scale= "0.3 0.3 0.3"  rotation = "0 0 0" width = 8em height = 8em onclick="nextScene()" onhover = "transition()">
-                                          <a-animation begin="hover" attribute = "rotation" from = "0 90 0" to = "0 450 0">
-                                           </a-animation>
-                                           -->
-
-                                </a-image>
-                              <a-entity geometry="primitive: plane; height: 100; width: 100"
-                                  material="repeat: 10 10; src: #icovy; width: 100"
-                                  rotation="-90 0 0" position="0 -2.5 -6"></a-entity>
-
-
-
-                              <a-sky src = "img/pana4.jpg"> </a-sky>
-    </a-entity>
-
-
-
-
-
-  <a-entity id="scene2" visible="true">
+  <a-entity id="scene1" visible="true">
 
               <a-image src="#guy1" position = "3 1 -5.5" rotation = "0 -20 0"  width=1.3em height = 4em>
               </a-image>
@@ -222,7 +135,7 @@
 
 
 
-                               <a-collada-model id = "kev" src="#kevin" position = "5 -2.5 -4" rotation = "0 -30 0"  scale = "3.5 3.5 3.5" onclick="nextScene1()">
+                               <a-collada-model id = "kev" src="#kevin" position = "5 -2.5 -4" rotation = "0 -30 0"  scale = "3.5 3.5 3.5" onclick="nextScene2()">
                                </a-collada-model>
                                 </a-image>
     
@@ -233,63 +146,99 @@
                               <a-sky src = "img/pana4.jpg"> </a-sky>
     </a-entity>
 
-    <a-entity id="scene3" visible="false">
-<a-sky src = "#example"> </a-sky>
- <a-image src= "img/back.png" position= "0 -2.4 0" scale= "0.3 0.3 0.3" rotation = "270 0 0" width = 5em height = 5em onclick="nextScene1()">
- <a-animation repeat="indefinite" attribute="rotation" from="270 0 0" to="270 359 0" dur="20000">
-      
-      </a-animation>
- </a-image>
+
+    <a-entity id="scene2" visible = "false">
+      <a-cube color="red" scale="3 3 3" onclick="nextScene2()"> </a-cube>
+            
+                                <a-collada-model src="#kevin" position = "5 -2.5 -4" rotation = "0 -30 0"  scale = "3.5 3.5 3.5">
+           
+                                 <a-image src="#kevinprofile" position = "3 1.5 0.5" rotation = "0 -45 0"  width=8em height = 4em>
+                             </a-image>
+
+                                          <a-image src="#invitevrdate" position = "1.2 0.2 -0.4" rotation = "0 -45 0" width=0.9em height=0.2em onclick="nextScene3()"  scale= "1 1 1">
+                                         <a-animation begin="click" attribute = "scale" from = "1 1 1" to = "1.5 1.5 1.5" >
+                                                     </a-animation>
+                                         </a-image>
+                                                 
+                                                 <a-image src="#chat" position = "2.1 0.2 0.5" rotation = "0 -45 0" width = 0.9em height=0.2em onclick="nextScene2()" scale= "1 1 1">
+                                                  <a-animation begin="click" attribute = "scale" from = "1 1 1" to = "1.5 1.5 1.5" >
+                                                     </a-animation>
+                                                 </a-image>      
+                                           
+                                             <a-image src="#pass" position = "3 0.2 1.4" rotation = "0 -45 0" width = 0.9em height= 0.2em onclick="nextScene1()" scale= "1 1 1">
+                                              <a-animation begin="click" attribute = "scale" from = "1 1 1" to = "1.5 1.5 1.5" >
+                                                     </a-animation>
+                                             </a-image>
+
+                                      </a-collada-model>
+
+
+                                </a-image>
+                              <a-entity geometry="primitive: plane; height: 100; width: 100"
+                                  material="repeat: 10 10; src: #icovy; width: 100"
+                                  rotation="-90 0 0" position="0 -2.5 -6"></a-entity>
 
 
 
+                              <a-sky src = "img/pana4.jpg"> </a-sky>
     </a-entity>
 
 
-  <a-entity id = "scene4" visible = "false">
+  <a-entity id = "scene3" visible = "false">
 
-          <a-collada-model src="#kevin" position = "5 -2.5 -4" rotation = "0 -30 0"  scale = "3.5 3.5 3.5">           
-                
-                <a-image src="#acceptance" position = "3 0 0.5" rotation = "0 -45 0"  width=8em height = 4em>
-                </a-image>
+                        <a-collada-model src="#kevin" position = "5 -2.5 -4" rotation = "0 -30 0"  scale = "3.5 3.5 3.5">           
+                              
+                              <a-image src="#acceptance" position = "3 0 0.5" rotation = "0 -45 0"  width=8em height = 4em>
+                              </a-image>
 
-                  <a-image src="#start" position = "0.72 0.9 0.52" rotation = "0 -45 0"  width=0.65em height = 0.11em onclick="nextScene3()">
-                  <a-animation begin="click" attribute = "scale" from = "1 1 1" to = "1.5 1.5 1.5" >
-                   </a-animation>
-                                       
+                                <a-image src="#start" position = "0.72 0.9 0.52" rotation = "0 -45 0"  width=0.65em height = 0.11em onclick="nextScene4()">
+                                <a-animation begin="click" attribute = "scale" from = "1 1 1" to = "1.5 1.5 1.5" >
+                                 </a-animation>
+                                                     
 
-           </a-collada-model>
-            <a-entity geometry="primitive: plane; height: 100; width: 100"
-                                            material="repeat: 10 10; src: #icovy; width: 100"
-                                            rotation="-90 0 0" position="0 -2.5 -6"></a-entity>
-
-
-               <a-obj-model
-                  src="#my-obj-heart"
-                  position="5 -2.4 -4"
-                  scale="0.05 0.05 0.05"
-                  material="color: red">
-                   <a-animation attribute="position" from="5 -2.4 -4" to="5 100 -4" dur="30000">
-                  </a-animation>
-
-            </a-obj-model>
-               <a-obj-model
-                  src="#my-obj-heart"
-                  position="0 -2.4 -4"
-                  scale="0.05 0.05 0.05"
-                  material="color: red">
-
-                   <a-animation attribute="position" from="0 -2.4 -4" to="0 100 -4" dur="30000">
-            </a-obj-model>
+                         </a-collada-model>
+                          <a-entity geometry="primitive: plane; height: 100; width: 100"
+                                                          material="repeat: 10 10; src: #icovy; width: 100"
+                                                          rotation="-90 0 0" position="0 -2.5 -6"></a-entity>
 
 
-       <a-image src= "img/back.png" position= "0 -2.4 0" scale= "0.3 0.3 0.3" rotation = "270 0 0" width = 5em height = 5em onclick="nextScene2()">
-       <a-animation repeat="indefinite" attribute="rotation" from="270 0 0" to="270 359 0" dur="20000">
-            
-      </a-animation>
- </a-image>
+                             <a-obj-model
+                                src="#my-obj-heart"
+                                position="5 -2.4 -4"
+                                scale="0.05 0.05 0.05"
+                                material="color: red">
+                                 <a-animation attribute="position" from="5 -2.4 -4" to="5 100 -4" dur="30000">
+                                </a-animation>
+
+                          </a-obj-model>
+                             <a-obj-model
+                                src="#my-obj-heart"
+                                position="0 -2.4 -4"
+                                scale="0.05 0.05 0.05"
+                                material="color: red">
+
+                                 <a-animation attribute="position" from="0 -2.4 -4" to="0 100 -4" dur="30000">
+                          </a-obj-model>
+
+
+                     <a-image src= "img/back.png" position= "0 -2.4 0" scale= "0.3 0.3 0.3" rotation = "270 0 0" width = 5em height = 5em onclick="nextScene2()">
+                     <a-animation repeat="indefinite" attribute="rotation" from="270 0 0" to="270 359 0" dur="20000">
+                          
+                    </a-animation>
+               </a-image>
             <a-sky src = "img/pana4.jpg"> </a-sky>
   </a-entity>
+
+
+
+    <a-entity id="scene4" visible="false">
+                      <a-sky src = "#example"> </a-sky>
+                       <a-image src= "img/back.png" position= "0 -2.4 0" scale= "0.3 0.3 0.3" rotation = "270 0 0" width = 5em height = 5em onclick="nextScene3()">
+                       <a-animation repeat="indefinite" attribute="rotation" from="270 0 0" to="270 359 0" dur="20000">
+                            
+                            </a-animation>
+                       </a-image>
+    </a-entity>
 
 </body>
 </html>
