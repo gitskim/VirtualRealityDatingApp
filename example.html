@@ -90,6 +90,8 @@
       <a-sphere position="5 1.25 -1" radius="0.25" color="#EF2D5E" width="1" height="1" depth="1" onclick="nextScene()"></a-sphere>
 -->
       <a-cube color="red" scale="3 3 3" onclick="nextScene()"> </a-cube>
+      
+                              <a-sky src = "img/pana4.jpg"> </a-sky>
                                <a-collada-model id = "kev" src="#kevin" position = "5 -2.5 -4" rotation = "0 -30 0"  scale = "3.5 3.5 3.5">
                                  
                                             <a-animation begin="hover" attribute = "rotation" from = "0 90 0" to = "0 450 0">
@@ -112,14 +114,18 @@
                                                   </a-animation> -->
                                             </a-image>
 
+                                      <a-image src= "#back" position= "0 -2 0" scale= "0.3 0.3 0.3"  rotation = "270 0 0" width = 8em height = 8em >
+                                          <a-animation repeat= "indefinite" attribute ="rotation" from = "270 0 0 " to = "270 360 0" dur="50000">
+                                    </a-animation>
+                                    </a-image>
 
                                </a-collada-model>
 
 
-                               <a-image src= "#back" position= "0 5 -4" scale= "0.3 0.3 0.3"  rotation = "0 0 0" width = 8em height = 8em onclick="nextScene()" onhover = "transition()">
+                              <!-- <a-image src= "#back" position= "0 5 -4" scale= "0.3 0.3 0.3"  rotation = "0 0 0" width = 8em height = 8em onclick="nextScene()" onhover = "transition()">
                                           <a-animation begin="hover" attribute = "rotation" from = "0 90 0" to = "0 450 0">
                                            </a-animation>
-                                           
+                                           -->
 
                                 </a-image>
                               <a-entity geometry="primitive: plane; height: 100; width: 100"
@@ -128,19 +134,6 @@
 
 
                               <a-sky src = "img/pana4.jpg"> </a-sky>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     </a-entity>
 
@@ -155,8 +148,8 @@
                                <a-collada-model id = "kev" src="#kevin" position = "2 -2.5 -4" rotation = "0 -30 0"  scale = "3.5 3.5 3.5" onclick="nextScene2()">
                                </a-collada-model>
 
-                               <a-image src= "#back" position= "0 5 -4" scale= "0.3 0.3 0.3"  rotation = "0 0 0" width = 8em height = 8em onclick="nextScene2()">
-
+<!--                               <a-image src= "#back" position= "0 5 -4" scale= "0.3 0.3 0.3"  rotation = "0 0 0" width = 8em height = 8em onclick="nextScene2()">
+-->
                                <!--
                                           <a-animation repeat= "indefinite" attribute ="rotation" from = "180 0 0 " to = "180 360 0" dur="50000">
                                     </a-animation>
